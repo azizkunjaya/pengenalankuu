@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pengenalan Diri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://cdn.pixabay.com/photo/2016/11/29/09/32/sakura-1867231_960_720.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+        header {
+            background-color: rgba(108, 99, 255, 0.9);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #6c63ff;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input, textarea, button {
+            width: 100%;
+            margin-top: 5px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #6c63ff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #5755d9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Form Pengenalan Diri</h1>
+    </header>
+    <form>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+
+        <label for="usia">Usia:</label>
+        <input type="number" id="usia" name="usia" placeholder="Masukkan usia Anda" required>
+
+        <label for="alamat">Alamat:</label>
+        <textarea id="alamat" name="alamat" rows="3" placeholder="Masukkan alamat Anda" required></textarea>
+
+        <label for="pekerjaan">Pekerjaan:</label>
+        <input type="text" id="pekerjaan" name="pekerjaan" placeholder="Masukkan pekerjaan Anda" required>
+
+        <label for="hobi">Hobi:</label>
+        <input type="text" id="hobi" name="hobi" placeholder="Masukkan hobi Anda" required>
+
+        <label for="cita-cita">Cita-cita:</label>
+        <input type="text" id="cita-cita" name="cita-cita" placeholder="Masukkan cita-cita Anda" required>
+
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>
